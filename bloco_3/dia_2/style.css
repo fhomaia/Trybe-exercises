@@ -1,0 +1,23 @@
+h1{
+    font-family: sans-serif;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 2cm;
+    text-align: center;
+    text-decoration-color:purple;
+}
+body{
+    font-size: 16px;
+}
+#Amarelo{
+    color:yellow;
+}
+#Vermelho{
+    color:red
+}
+#Marrom{
+    color:brown
+}
