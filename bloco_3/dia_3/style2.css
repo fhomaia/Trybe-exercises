@@ -24,5 +24,6 @@
     left: 425px;
     position: absolute;
     z-index: 2; 
-    font-size: 25px;   
+    font-size: 25px;
+    width: fit-content;   
     }
