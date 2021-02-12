@@ -1,7 +1,5 @@
 .super-mario{
     width: 400px;
-    overflow: auto;
-    
 }
 .goomba{
     width:400px;
@@ -9,27 +7,22 @@
     left:10px;
     position: absolute;
     z-index: 4;
-    overflow: auto;
-
 }
 .bowser{
     top: 425px;
     left: 600px;
-    position: absolute;
-    overflow: auto;
+    position: absolute;  
 }
 .baloon{
     top: 425px;
     left: 400px;
     position: absolute;
-    z-index: 1;
-    overflow: auto;
+    z-index: 1;   
 }
 .word{
     top: 470px;
     left: 425px;
     position: absolute;
     z-index: 2; 
-    font-size: 25px;
-    overflow: auto;
+    font-size: 25px;   
     }
