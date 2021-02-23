@@ -27,4 +27,4 @@ Os requisitos do exercício são:
 
 Sendo `obrigatório` fazer uso de no mínimo elementos com as seguintes tags: header, nav, article, section, h1, h2, h3, aside, footer, table e img.
 
-Confira o resultado final [aqui](https://fhomaia.github.io/Trybe-exercises/Front-end/bloco_3/dia_4/)
+Confira o resultado final [aqui](https://fhomaia.github.io/Trybe-exercises/Front-end/bloco_3/dia_4/index.html)
