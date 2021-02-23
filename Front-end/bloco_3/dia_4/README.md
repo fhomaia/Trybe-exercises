@@ -1,6 +1,6 @@
 # DIA 4
 
-O objetivo dos exercícios desse dia foi colocar em prática o que havia aprendido sobre HTML semântico. Para isso deveria a partir do código inicial abaixo, desenvolver uma página que apresenta um dos animais mais impressionantes que existem: o _(Stomatopoda)[https://www.nationalgeographic.com/science/phenomena/2014/07/03/natures-most-amazing-eyes-just-got-a-bit-weirder/]_. Sendo que toda a estilização da página ficou ao meu critério.
+O objetivo dos exercícios desse dia foi colocar em prática o que havia aprendido sobre HTML semântico. Para isso deveria a partir do código inicial abaixo, desenvolver uma página que apresenta um dos animais mais impressionantes que existem: o [Stomatopoda](https://www.nationalgeographic.com/science/article/natures-most-amazing-eyes-just-got-a-bit-weirder). Sendo que toda a estilização da página ficou ao meu critério.
 
 Os requisitos do exercício são:
 
@@ -21,7 +21,7 @@ Os requisitos do exercício são:
   * Adicionar, para cada seção, uma imagem, como forma de ilustrar o fato.
   * Adicionar, por fim, uma seção de referências bibliográficas, contendo uma lista de todos os links que foram usados como base para compilar a página em questão.
 
-5. Adicionar um conteúdo adjacente ao artigo, disponibilizando um link para (este vídeo)[https://www.youtube.com/watch?v=E0Li1k5hGBE] , que mostra o animal em ação.
+5. Adicionar um conteúdo adjacente ao artigo, disponibilizando um link para [este vídeo](https://www.youtube.com/watch?v=E0Li1k5hGBE), que mostra o animal em ação.
 
 6. Adicionar um rodapé na página, nomeando o autor da compilação e o ano em que foi produzida.
 
