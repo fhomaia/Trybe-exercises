@@ -10,5 +10,5 @@ Para colocar em prática o conhecimento adquirido foi proposto, a partir da estr
  - Na listagem de linguagens de programação, fazer com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir "java*" no texto, utilizar uma cor de fundo rosa.
  - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, fazer com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte "temática do site"
 
- Confira o resultado final [Aqui]()
+ Confira o resultado final [aqui](https://fhomaia.github.io/Trybe-exercises/Front-end/bloco_3/dia_3/)
 
