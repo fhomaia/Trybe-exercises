@@ -21,8 +21,10 @@ Os requisitos do exercício são:
   * Adicionar, para cada seção, uma imagem, como forma de ilustrar o fato.
   * Adicionar, por fim, uma seção de referências bibliográficas, contendo uma lista de todos os links que foram usados como base para compilar a página em questão.
 
-5. Adicionar um conteúdo adjacente ao artigo, disponibilizando um link para _(este vídeo)[https://www.youtube.com/watch?v=E0Li1k5hGBE]_, que mostra o animal em ação.
+5. Adicionar um conteúdo adjacente ao artigo, disponibilizando um link para (este vídeo)[https://www.youtube.com/watch?v=E0Li1k5hGBE] , que mostra o animal em ação.
 
 6. Adicionar um rodapé na página, nomeando o autor da compilação e o ano em que foi produzida.
 
 Sendo `obrigatório` fazer uso de no mínimo elementos com as seguintes tags: header, nav, article, section, h1, h2, h3, aside, footer, table e img.
+
+Confira o resultado final [aqui](https://fhomaia.github.io/Trybe-exercises/Front-end/bloco_3/dia_4/)
