@@ -10,10 +10,21 @@ table{
     font-size: 18px;
     line-height: 60px;
     font-weight: 600;
+    margin-bottom: 50px;
 }
 h3{
     text-decoration: underline;
 }
 .Index{
     padding: 30px;
+}
+a{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(238, 238, 96);
+    border-radius: 15px;
+    color: black;
+}
+a:hover{
+    background-color: yellow;
 }
