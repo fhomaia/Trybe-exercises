@@ -75,3 +75,42 @@ for (let index9 = 0;index9 < ate25.length; index9++){
 }
 
 console.log(divididoPor2);
+
+//Problema Bônus 1
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for ( let j = 1; j < numbers.length ; j++){
+    for ( let i = 0; i < j; i++){
+        if (numbers[j] < numbers[i]){
+            let aux = numbers[j]
+            numbers[j] = numbers[i]
+            numbers[i] = aux
+        }
+    }
+}
+console.log(numbers)
+
+//Problema Bônus 2
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for ( let j = 1; j < numbers.length ; j++){
+    for ( let i = 0; i < j; i++){
+        if (numbers[j] > numbers[i]){
+            let aux = numbers[j]
+            numbers[j] = numbers[i]
+            numbers[i] = aux
+        }
+    }
+}
+console.log(numbers)
+
+//Problema Bônus 3
+let bonus =[]
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for ( let j = 1; j < numbers.length ; j++){
+    for ( let i = j - 1; i < j; i++){
+        bonus.push(numbers[i]*numbers[j])
+    }
+}
+bonus.push(numbers[numbers.length -1]*2)
+console.log(bonus)
