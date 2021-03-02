@@ -1,26 +1,26 @@
 // // Problema Bônus 1
 
-// function converteRomanos (num) {
-//     let romanos = {
-//         I : 1,
-//         V : 5,
-//         X : 10,
-//         L : 50,
-//         C : 100,
-//         D : 500,
-//         M : 1000,
-//     }
-//     let soma = 0;
-//     for (index = 0; index < num.length; index++){
-//         if (romanos[num[index]] < romanos[num[index + 1]]){
-//             soma = soma - romanos[num[index]]
-//         } else {
-//             soma = soma + romanos[num[index]]
-//         }
-//     }
-//     return soma
-// }
-// console.log( converteRomanos("DLIX"))
+function converteRomanos (num) {
+    let romanos = {
+        I : 1,
+        V : 5,
+        X : 10,
+        L : 50,
+        C : 100,
+        D : 500,
+        M : 1000,
+    }
+    let soma = 0;
+    for (index = 0; index < num.length; index++){
+        if (romanos[num[index]] < romanos[num[index + 1]]){
+            soma = soma - romanos[num[index]]
+        } else {
+            soma = soma + romanos[num[index]]
+        }
+    }
+    return soma
+}
+console.log( converteRomanos("DLIX"))
 
 
 // Problema Bônus 2
