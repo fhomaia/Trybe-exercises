@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        function futuro (texto){
+         document.getElementsByTagName('p')[1].innerHTML = texto
+        }
+
+        futuro("Em 2 anos me vejo trabalhando como desenvolvedor de softwares em uma multinacional!")
+
+        function corTrybe (corTrybe){
+         return (document.getElementsByClassName("main-content")[0].style.backgroundColor = corTrybe)
+        }
+        corTrybe('rgb(76,164,109)')
+
+        function cor2 (corTwo){
+            return (document.getElementsByClassName("center-content")[0].style.backgroundColor = corTwo)
+        }
+
+        cor2('white')
+
+        function correctH1 (texto) {
+            return (document.getElementsByTagName('h1')[0].innerHTML = texto)
+        }
+
+        correctH1('Exercício 5.1 - Java Script')
+
+        function maiusculo() {
+        let upper = document.getElementsByTagName('p')
+        for (let index = 0; index < upper.length; index += 1){
+            upper[index].innerText = upper[index].innerText.toUpperCase()
+        }
+        }
+
+        maiusculo()
+
+        function exibetags() {
+        let tags = document.getElementsByTagName('p')
+        for (let index = 0; index < tags.length; index += 1){
+            console.log(tags[index].innerText)
+        }    
+        }
+
+        exibetags()
+    </script>
+  </body>
+</html>
