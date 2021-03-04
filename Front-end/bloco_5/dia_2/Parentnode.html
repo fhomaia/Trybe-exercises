@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    //Problema 1
+     let corpo = document.getElementsByTagName('body')[0];
+     let maintitulo = document.createElement('h1');
+     maintitulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+     console.log(maintitulo);
+     corpo.appendChild(maintitulo);
+    
+    //Problema 2
+    let div1 = document.createElement('div');
+    div1.className = 'main-content';
+    corpo.appendChild(div1);
+
+    //Problema 3
+    div1 = document.getElementsByClassName('main-content')[0];
+    let div2 = document.createElement('div');
+    div2.className = 'center-content';
+    div1.appendChild(div2);
+
+    //Problema 4
+    div2 = document.getElementsByClassName('center-content')[0];
+    let p1 = document.createElement('p');
+    p1.innerText = 'Aprendendo a manipular o HtML e CSS através do JavaScript';
+    div2.appendChild(p1);
+
+    //Problema 5
+    let div3 = document.createElement('div');
+    div3.className = 'left-content';
+    div1.appendChild(div3);
+
+    //Problema 6
+    let div4 = document.createElement('div');
+    div4.className = 'right-content';
+    div1.appendChild(div4);
+
+    //Problema 7
+    div3 = document.getElementsByClassName('left-content')[0];
+    let img1 = document.createElement('img');
+    img1.src = 'https://picsum.photos/200';
+    img1.className = 'small-image';
+    div3.appendChild(img1);
+
+    //Problema 8
+    div4 = document.getElementsByClassName('right-content')[0];
+    let ul1 = document.createElement('ul');
+    div4.appendChild(ul1);
+    ul1 = document.getElementsByTagName('ul')[0];
+    for (index = 1; index < 11 ; index += 1){
+      let li1 = document.createElement('li');
+      li1.innerText = index;
+      ul1.appendChild(li1); 
+    }
+    
+    //Problema 9
+    let h3first = document.createElement('h3')
+    let h3second = document.createElement('h3')
+    let h3third = document.createElement('h3')
+    div1.appendChild(h3first);
+    div1.appendChild(h3second);
+    div1.appendChild(h3third);
+
+    //Parte 2
+
+    //Problema 1
+    document.getElementsByTagName('h1')[0].className = 'title';
+
+    //Problema 2
+    document.getElementsByTagName('h3')[0].className = 'description';
+    document.getElementsByTagName('h3')[1].className = 'description';
+    document.getElementsByTagName('h3')[2].className = 'description';
+
+    //Problema 3
+    div1.removeChild(div3);
+
+    //Problema 4
+    div4.style.margin = 'auto'
+
+    //Problema 5
+    div1.style.backgroundColor = 'green'
+
+    //Problema 6
+    let li9 = document.getElementsByTagName('li')[8];
+    let li10 = document.getElementsByTagName('li')[9];
+    ul1.removeChild(li9);
+    ul1.removeChild(li10);
+
+    </script>
+  </body>
+</html>
