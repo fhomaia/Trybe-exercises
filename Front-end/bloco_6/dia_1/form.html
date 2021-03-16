@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <fieldset>
+            <label for="name">
+                Nome:
+                <input  class="fullwidth" type="text" maxlength="40" id="name" name="name" required>
+            </label>
+            <label for="e-mail">
+                E-mail:
+                <input class="fullwidth" type="text" maxlength="50" id="e-mail" name="e-mail" required>
+            </label>
+            <label for="cpf">
+                CPF:
+                <input class="fullwidth" type="text" maxlength="11" id="cpf" name="cpf" required>
+            </label>
+            <label for="adress">
+                Endereço:
+                <input class="fullwidth" type="text" maxlength="200" id="adress" name="adress" required>
+            </label>
+            <label for="city">
+                Cidade:
+                <input class="fullwidth" type="text" maxlength="28" id="city" name="city" required>
+            </label>
+            <label for="states"> Estado:
+            <select name="comboBox" id="states" required></select>
+            </label>
+            <label for='moradia'>
+                Moradia:
+                <input type="radio" maxlength="28" id="moradia" name="moradia" > Casa
+                <input type="radio" maxlength="28" id="moradia2" name="moradia" checked> Apartamento
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="resume">
+                Resumo do currículo:
+                <textarea name="Resume" id="resume" cols="36" rows="10" maxlength="1000" required></textarea>
+            </label>
+            <label for="cargo">
+                Cargo:
+                <input class="fullwidth" type="text" maxlength="40" id="cargo" name="cargo" required>
+            </label>
+            <label for="description">
+                Descrição do cargo:
+                <input class="fullwidth" type="text" maxlength="500" id='description' name="description" required>
+            </label>
+            <label for="inicioDay">
+                Data de início
+                <input class="fullwidth" type="text" id="inicioDay" name="inicioDay" required>
+            </label>
+        </fieldset>
+    </form>
+    <button type="button">Submit</button>
+    <button class="clear-button" type="button">Limpar</button>
+    <section class='form-data' ></section>
+    <script src="script.js"></script>
+</body>
+</html>
