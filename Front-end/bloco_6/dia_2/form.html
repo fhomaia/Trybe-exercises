@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET">
+        <div class="field">
+            <div class="control">
+                <label for="name">
+                    Nome:
+                    <input  class="input is-rounded" type="text" maxlength="40" id="name" name="name" required>
+                </label>
+            </div>
+        </div>
+        <div class="field">
+            <p class="control">
+                <label for="e-mail">E-mail:</label>
+                <input class="input is-rounded" type="text" maxlength="50" id="e-mail" name="e-mail" required>
+            </p>
+        </div>
+        <div class="field">
+            <div class="control">
+            <label for="cpf">
+                CPF:
+                <input class='input is-rounded' type="text" maxlength="11" id="cpf" name="cpf" required>
+            </label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+            <label for="adress">
+                Endereço:
+                <input class='input is-rounded' type="text" maxlength="200" id="adress" name="adress" required>
+            </label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+            <label for="city">
+                Cidade:
+                <input class='input is-rounded' type="text" maxlength="28" id="city" name="city" required>
+            </label>
+            </div>
+        </div>
+        <div class="field">
+            <label for="states" > Estado:</label>
+            <div class="select">
+                    <select name="comboBox" id="states" required></select>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+            <span>Moradia:</span> 
+                <input type="radio" maxlength="28" id="moradia1" name="moradia" >
+                <label class='radio' for='moradia1'> Casa </label>
+                <input type="radio" maxlength="28" id="moradia2" name="moradia" checked> 
+                <label class='radio' for='moradia2'>Apartamento</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+            <label for="resume">
+                Resumo do currículo:
+                <textarea class="textarea is-info" name="Resume" id="resume" cols="36" rows="10" maxlength="1000" required></textarea>
+            </label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+            <label for="cargo">
+                Cargo:
+                <input class='input is-rounded' type="text" maxlength="40" id="cargo" name="cargo" required>
+            </label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+            <label for="description">
+                Descrição do cargo:
+                <input class='input is-rounded' class="fullwidth" type="text" maxlength="500" id='description' name="description" required>
+            </label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+            <label for="inicioDay">
+                Data de início
+                <input class='input is-rounded' type="text" id="datepicker" name="inicioDay" required>
+            </label>
+            </div>
+        </div>       
+    </form>
+    <button type="button" class="button is-primary">Submit</button>
+    <button class="clear-button button is-warning" type="button">Limpar</button>
+    <section class='form-data' ></section>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
