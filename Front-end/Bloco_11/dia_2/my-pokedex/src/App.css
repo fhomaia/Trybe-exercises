@@ -1,0 +1,27 @@
+.Pokemons-div {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Pokemon-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 30px 0;
+  align-items: center;
+  border-radius: 10%;
+  border: solid gray 1px;
+  width: 200px;
+  padding-bottom: 15px;
+  box-shadow: 2px 2px 5px  teal;
+}
+
+h1 {
+  text-align: center;
+}
+
+a:visited{
+  color:blue;
+}
