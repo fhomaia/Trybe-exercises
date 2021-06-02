@@ -1,4 +1,4 @@
-import { ADD } from '../actions/actionsTypes';
+import { ADD, EXCLUDE } from '../actions/actionsTypes';
 
 const INICIAL_STATE = ({
   clientsData:[{ 
@@ -18,6 +18,11 @@ const clientsReducer = (state = INICIAL_STATE, action) => {
           email: action.payload.email,
         }],
       });
+      case EXCLUDE:
+        return ({
+          ...state,
+          clientsData: state.clientsData.filter((client) => client.name !== action.payload),
+        });
     default:
       return state;
   }

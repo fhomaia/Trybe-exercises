@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import clientsAction from '../redux/actions/clientsAction'
+import  clientsAddAction  from '../redux/actions/clientsAction';
 import { Link } from 'react-router-dom';
 
 class AddClients extends React.Component {
@@ -17,40 +17,51 @@ class AddClients extends React.Component {
     this.setState({
       [target.name]: target.value
     });
-  } 
+  }
+
+  handleClick = () => {
+    const { clientsAddAction } = this.props;
+    const { name, age, email } = this.state;
+    clientsAddAction(name, age, email);
+    this.setState({
+      name: '',
+      age: '',
+      email: '',
+    });
+  }
+
   render() {
-    const { clientsAction } = this.props;
     const { name, age, email } = this.state;
     return(
       <div>
         <form>
           <label htmlFor="name">
             Nome
-            <input type="text" id="name" name="name" onChange={ this.handleChange } />
+            <input type="text" id="name" name="name" onChange={ this.handleChange } value={name} />
           </label>
           <label htmlFor="name">
             Idade
-            <input type="text" id="age" name="age" onChange={ this.handleChange } />
+            <input type="text" id="age" name="age" onChange={ this.handleChange } value={age} />
           </label>
           <label htmlFor="email">
             e-mail
-            <input type="email" id="email" name="email" onChange={ this.handleChange } />
+            <input type="email" id="email" name="email" onChange={ this.handleChange } value={email}/>
           </label>
             <button
               type='button'
-              onClick={ () => clientsAction(name, age, email)}
+              onClick={ this.handleClick }
             >
               Adicionar
           </button>
         </form>
-        <Link to='/users'>Voltar para clientes cadastrados</Link>
+        <Link to='/clients'>Voltar para clientes cadastrados</Link>
       </div>
     )
   }
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  clientsAction: (name, age, email) => dispatch(clientsAction(name, age, email))
+  clientsAddAction: (name, age, email) => dispatch(clientsAddAction(name, age, email))
 })
 
 export default connect(null, mapDispatchToProps)(AddClients);

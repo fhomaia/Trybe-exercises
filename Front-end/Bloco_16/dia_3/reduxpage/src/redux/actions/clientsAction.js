@@ -1,6 +1,6 @@
-import { ADD } from './actionsTypes';
+import { ADD, EXCLUDE } from './actionsTypes';
 
-const clientsAction = (name, age, email) => ({
+const clientsAddAction = (name, age, email) => ({
   type: ADD,
   payload: {
     name,
@@ -9,4 +9,11 @@ const clientsAction = (name, age, email) => ({
   }
 });
 
-export default clientsAction;
+export default clientsAddAction;
+
+const clientsExcludeAction = (payload) => ({
+  type: EXCLUDE,
+  payload,
+});
+
+export { clientsExcludeAction, }

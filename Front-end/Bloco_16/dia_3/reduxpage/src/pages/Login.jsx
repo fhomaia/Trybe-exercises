@@ -31,7 +31,7 @@ class Login extends React.Component {
           senha
           <input type="password" id="senha" name="senha" onChange={ this.handleChange } />
         </label>
-        <Link to='/users'>
+        <Link to='/clients'>
           <button
             type='button'
             onClick={() => loginAction(email, senha)}
