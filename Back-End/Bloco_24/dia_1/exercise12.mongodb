@@ -1,0 +1,11 @@
+use ("class");
+db.movies.updateMany(
+  {},
+  {
+    $unset: {
+      budget: "",
+      estimatedBudget: "",
+    },
+  }
+);
+db.movies.findOne({ title: "Home Alone"});

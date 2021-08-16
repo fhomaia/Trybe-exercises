@@ -1,0 +1,12 @@
+use ("class");
+db.movies.updateOne(
+  {
+  "title": "Batman",
+  },
+  {
+    $inc: {
+      imdbRating: 2,
+    }
+  }
+);
+db.movies.findOne({ title: "Batman"});

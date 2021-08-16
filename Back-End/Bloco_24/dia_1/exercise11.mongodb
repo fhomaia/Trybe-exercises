@@ -1,0 +1,10 @@
+use ("class");
+db.movies.updateMany(
+  {},
+  {
+    $set: {
+      sequels: 0,
+    },
+  }
+);
+db.movies.findOne({ title: "Home Alone"});

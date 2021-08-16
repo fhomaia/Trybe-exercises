@@ -1,0 +1,10 @@
+use("class");
+db.movies.createIndex({ description: "text"})
+
+db.movies.find(
+  {
+    $text: {
+      $search: "vacation"
+    }
+  }
+)

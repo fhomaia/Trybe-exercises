@@ -1,0 +1,24 @@
+use("class");
+db.movies.find(
+  {
+    category:
+      {
+        $in: [ "adventure", "family" ]
+      },
+    ratings : 
+      {
+        $size: 4,
+      },
+    imdbRating:
+      {
+        $gt: 7,
+      }
+  },
+  {
+    _id: 0,
+    title: 1,
+    ratings: 1,
+    category: 1,
+    imdbRating: 1,
+  }
+);

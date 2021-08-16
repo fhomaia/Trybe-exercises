@@ -1,0 +1,9 @@
+use('class');
+db.superheroes.find(
+  {
+    $and: [
+      {  race: { $ne: "Human"} },
+      { "aspects.height": { $gt: 180 } }
+    ]
+  }
+).pretty();

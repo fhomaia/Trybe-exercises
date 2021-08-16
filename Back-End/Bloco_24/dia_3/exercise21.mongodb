@@ -1,0 +1,8 @@
+use("class");
+db.movies.find(
+  {
+    $text: {
+      $search: "monstrous criminal"
+    }
+  }
+);
