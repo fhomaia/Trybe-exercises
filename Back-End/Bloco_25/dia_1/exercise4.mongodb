@@ -1,0 +1,15 @@
+use("erp");
+db.clientes.aggregate([
+  {
+    $match: {
+      "endereco.uf": "SC",
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      count: { $sum: 1 }
+    }
+  }
+]);
+

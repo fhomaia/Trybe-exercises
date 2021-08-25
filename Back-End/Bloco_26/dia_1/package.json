@@ -1,0 +1,20 @@
+{
+  "name": "imccalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "IMC": " node IMC.js",
+    "velocidade": "node velocidade.js",
+    "guessingGame": "node guessingGame.js",
+    "fatorial": "node fatorial.js",
+    "fibonacci": "node fibonacci.js"
+  },
+  "author": "Fernando Maia",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
